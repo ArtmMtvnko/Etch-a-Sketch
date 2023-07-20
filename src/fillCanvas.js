@@ -1,11 +1,15 @@
 const canvas = document.querySelector('#canvas')
-const mouseDown = false;
+let mouseDown = false;
+
+canvas.addEventListener('mousedown', () => mouseDown = true)
+canvas.addEventListener('mouseup', () => mouseDown = false)
 
 for (let i = 0; i < 64**2; i++) {
     const canvasItem = document.createElement('div')
     canvasItem.classList.add('canvas__item')
-    canvasItem.addEventListener('mousedown', () => mouseDown = true)
-    canvasItem.addEventListener('mouseup', () => mouseDown = false)
-    canvasItem.addEventListener('mouseover', () => {})
+    canvasItem.addEventListener('mouseover', (event) => {
+        if (event.type === 'mouseover' && !mouseDown) return
+        event.target.style.backgroundColor = '#000000'
+    })
     canvas.appendChild(canvasItem)
 }
