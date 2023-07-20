@@ -1,8 +1,9 @@
-%scaleGrowOnHover {
+%hoverAnimation {
     transition: 0.2s;
         
         &:hover {
             transform: scale(1.05);
+            box-shadow: 0 0 5px #7676ee;
         }
 }
 
@@ -19,7 +20,7 @@ aside {
         width: 100%;
         height: 40px;
         cursor: pointer;
-        @extend %scaleGrowOnHover;
+        @extend %hoverAnimation;
     }
 
     > button {
@@ -27,6 +28,6 @@ aside {
         padding: 10px;
         background-color: transparent;
         border: 1px solid #000000;
-        @extend %scaleGrowOnHover;
+        @extend %hoverAnimation;
     }
 }
