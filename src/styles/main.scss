@@ -1,0 +1,13 @@
+@import "./aside.scss";
+@import "./canvas.scss";
+
+main {
+    display: grid;
+    width: 60%;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+
+    place-items: center;
+}

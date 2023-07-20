@@ -1,0 +1,32 @@
+%scaleGrowOnHover {
+    transition: 0.2s;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+}
+
+aside {
+    display: grid;
+    height: 50%;
+    width: 30%;
+    
+    grid-template-rows: repeat(3, 1fr);
+    
+    place-items: center;
+
+    input[type='color'] {
+        width: 100%;
+        height: 40px;
+        cursor: pointer;
+        @extend %scaleGrowOnHover;
+    }
+
+    > button {
+        width: 100%;
+        padding: 10px;
+        background-color: transparent;
+        border: 1px solid #000000;
+        @extend %scaleGrowOnHover;
+    }
+}
