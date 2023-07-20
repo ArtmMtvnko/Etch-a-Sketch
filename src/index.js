@@ -1,4 +1,4 @@
-import './fillCanvas.js'
+import './drawOnCanvas.js'
 import {clearCanvas} from './clear.js'
 import './styles/index.scss'
 
