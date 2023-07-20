@@ -1,0 +1,39 @@
+{
+  "name": "etch-a-sketch",
+  "version": "1.0.0",
+  "description": "Etch-a-Sketch project with using webpack (project idea from \"the odin project\")",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArtmMtvnko/Etch-a-Sketch.git"
+  },
+  "keywords": [
+    "webpack",
+    "html",
+    "css",
+    "scss",
+    "js",
+    "javascript"
+  ],
+  "author": "Artem Matviienko <artemm3note@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArtmMtvnko/Etch-a-Sketch/issues"
+  },
+  "homepage": "https://github.com/ArtmMtvnko/Etch-a-Sketch#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "sass": "^1.64.0",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
